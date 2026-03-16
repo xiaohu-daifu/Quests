@@ -1,1 +1,1 @@
-solution = "money"
+solution = "honey"
