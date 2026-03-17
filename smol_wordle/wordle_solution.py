@@ -1,1 +1,1 @@
-solution = "bunny"
+solution = "pages"
