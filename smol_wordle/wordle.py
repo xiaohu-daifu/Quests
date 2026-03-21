@@ -1,4 +1,4 @@
-import wordle_solution
+from wordle_solution import solution, secret_message
 
 truthyness = True
 
