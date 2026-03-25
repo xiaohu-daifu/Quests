@@ -13,7 +13,7 @@ def wordle(word, solution):
     if word == solution:
         global truthyness
         truthyness = False
-        return secret_message
+        
     else:
         store = []
         for position, letter in enumerate(word):
