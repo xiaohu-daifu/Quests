@@ -7,6 +7,10 @@ class Product:
 
     def __str__(self) -> str:
         return f'{self.name} - ${self.price}'
+    
+    def __repr__(self) -> str:
+        cls_name = self.__class__.__name__
+        return f"{cls_name}('name:{self.name}, price:{self.price}')"
 
 class DiscountStrategy(ABC):
     @abstractmethod
@@ -60,6 +64,7 @@ class DiscountEngine:
 
 if __name__ == '__main__':
     product = Product('Wireless Mouse', 50.0)
+    print(repr(product))
     user_tier = 'Premium'
 
     strategies = [
